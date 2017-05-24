@@ -16,7 +16,7 @@
         <br>
         <h3>Alterar paciente</h3>
         <br>
-        <form>
+        <form action="Scontroler?acao=alterandopaciente" method="POST">
         CPF:
         <br>
         <input type="text" name="cpf" pattern="[0-9]{11}" title="exemplo: 034....." required="required" maxlength="11">

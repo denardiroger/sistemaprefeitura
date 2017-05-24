@@ -16,7 +16,7 @@
         <br>
         <h3>Registro de consultas</h3>
         <br>
-        <form>
+        <form action="Scontroler?acao=registrarconsulta" method="POST">
             Paciente:
             <input type="text" required="required" pattern="[a-z\s]+$" maxlength="50" size="20">
             <input type="submit" value="Buscar">

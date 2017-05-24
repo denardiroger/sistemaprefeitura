@@ -16,7 +16,7 @@
         <br>
         <h3>Alterar doença</h3>
         <br>
-        <form>
+        <form action="Scontroler?acao=alterandodoenca" method="POST">
             Nome:
             <br>
             <input type="text" required="required" pattern="[a-z\s]+$" maxlength="50" size="40">

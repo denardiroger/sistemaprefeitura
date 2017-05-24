@@ -4,9 +4,17 @@
         <servlet-name>verificar_acao</servlet-name>
         <servlet-class>controler.verificar_acao</servlet-class>
     </servlet>
+    <servlet>
+        <servlet-name>Scontroler</servlet-name>
+        <servlet-class>controler.Scontroler</servlet-class>
+    </servlet>
     <servlet-mapping>
         <servlet-name>verificar_acao</servlet-name>
         <url-pattern>/verificar_acao</url-pattern>
+    </servlet-mapping>
+    <servlet-mapping>
+        <servlet-name>Scontroler</servlet-name>
+        <url-pattern>/Scontroler</url-pattern>
     </servlet-mapping>
     <session-config>
         <session-timeout>

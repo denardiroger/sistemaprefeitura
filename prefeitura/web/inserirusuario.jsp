@@ -16,10 +16,10 @@
         <br>
         <h3>Cadastro de usuarios</h3>
         <br>
-        <form>
+        <form action="Scontroler?acao=inserirusuario" method="POST">
         Nome:
             <br>
-            <input type="text" required="required" pattern="[a-z]+$" maxlength="50" size="40">
+            <input type="text" required="required" name="nome" pattern="[a-z]+$" maxlength="50" size="40">
             <br>
              email:
         <br>
@@ -27,7 +27,7 @@
         <br>
          Senha:
             <br>
-            <input type="password" required="required" pattern="[a-z]+$" maxlength="16" size="20">
+            <input type="password" required="required" name="senha" pattern="[a-z]+$" maxlength="16" size="20">
             <br>
          Nível:
          <br>

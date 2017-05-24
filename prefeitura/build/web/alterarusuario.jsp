@@ -15,7 +15,7 @@
         <jsp:include page="index.jsp"/>
         <br>
         <h3>Alterar usuario</h3>
-         <form>
+        <form action="Scontroler?acao=alterandousuario">
             Nome:
             <br>
             <input type="text" required="required" pattern="[a-z]+$" maxlength="50" size="40">

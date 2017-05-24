@@ -14,7 +14,7 @@
     <body>
         <div class="container">
             <img src="imagem/doctor.png">
-            <form action="index.html" method="GET" >
+            <form action="Scontroler?acao=login" method="GET" >
                 <div class="form-input">
                     <input type="text" name="username" placeholder="Usuário">
                 </div>
@@ -23,7 +23,7 @@
                 </div>
                 <input type="submit" name="Login" value="Login" id="btl" >
                 <br>
-                <a href="#">Esqueci a Senha</a>
+                <a href="Scontroler?acao=esqueceuasenha">Esqueci a Senha</a>
             </form>
         </div>
     </body>

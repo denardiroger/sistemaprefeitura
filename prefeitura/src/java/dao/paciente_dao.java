@@ -102,5 +102,32 @@ public class paciente_dao {
             return null;
         }
     }
+     public List listar_paciente() throws SQLException {
+        try {
+            PreparedStatement pstmt = con.prepareCall("SELECT * FROM paciente");
+            ResultSet rs = pstmt.executeQuery();
+
+            List<paciente> lista_paciente = new ArrayList<paciente>();
+            while (rs.next()) {
+                paciente paciente2 = new paciente();
+                
+                paciente2.setCpf(rs.getString("cpf"));
+                paciente2.setCpf(rs.getString("nome"));
+                paciente2.setCpf(rs.getString("nascimento"));
+                paciente2.setCpf(rs.getString("nome_mae"));
+                paciente2.setCpf(rs.getString("sexo"));
+                paciente2.setCpf(rs.getString("obito"));
+                
+                lista_paciente.add(paciente2);
+
+            }
+            pstmt.close();
+            rs.close();
+            return lista_paciente;
+        } catch (SQLException e) {
+            System.out.println("erro: " + e.getMessage());
+            return null;
+        }
+    }
     
 }

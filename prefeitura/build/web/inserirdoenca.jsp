@@ -16,14 +16,14 @@
         <br>
         <h3>Cadastro de doenças</h3>
         <br>
-        <form>
+        <form action="Scontroler?acao=inserirdoenca" method="POST">
             Cid:<br>
-            <input type="text" required="required">
+            <input type="text" required="required" name="cid">
 
             <br>
             Nome:
             <br>
-            <input type="text" required="required" pattern="[a-z\s]+$" maxlength="50" size="40">
+            <input type="text" required="required" name="nome" pattern="[a-z\s]+$" maxlength="50" size="40">
             <br>
             <br>
             <input type="submit" value="Salvar">

@@ -53,10 +53,10 @@ public final class index_jsp extends org.apache.jasper.runtime.HttpJspBase
       out.write("    </head>\n");
       out.write("    <body>\n");
       out.write("        <ul>\n");
-      out.write("            <li><a href=\"#\">Home</a></li>\n");
+      out.write("            <li><a href=\"index.jsp\">Home</a></li>\n");
       out.write("            <li class=\"dropdown\"><a href=\"#\" class=\"dropdown-btn\">Usuario</a>\n");
       out.write("                <div class=\"dropdown-menu\">\n");
-      out.write("                    <a href=\"inserirusuario.html\">cadastrar usuario</a>\n");
+      out.write("                    <a href=\"inserirusuario.jsp\">cadastrar usuario</a>\n");
       out.write("                </div>\n");
       out.write("            \n");
       out.write("            </li>\n");
